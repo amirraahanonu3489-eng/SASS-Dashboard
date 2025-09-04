@@ -1,0 +1,24 @@
+@use 'variables' as v;
+
+a.active{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: white;
+    color: v.$primary-color;
+}
+
+.elements a{
+    color: v.$primary-color;
+}
+.elements a:hover{
+    background-color: white;
+    color: lightpink;
+}
+
+.dash{
+    text-decoration: none;
+    color: black;
+}
+.dash:hover{
+    color: v.$primary-color;
+}

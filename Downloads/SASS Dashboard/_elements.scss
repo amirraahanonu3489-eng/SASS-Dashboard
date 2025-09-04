@@ -1,0 +1,71 @@
+@use 'variables' as v;
+
+@mixin box-style{
+    width: 240px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: v.$primary-font;
+    font-weight: bold;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 35px;
+}
+.elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.pink-box{
+    background-color: v.$primary-color;
+    @include box-style;
+}
+.white-box{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    @include box-style;
+}
+.number{
+    font-size: 25px;
+}
+.cust{
+    font-size: 13px;
+    color: gray;
+}
+.box-icon{
+    font-size: 35px;
+    color: v.$primary-color;
+}
+.box-icon-pink{
+    font-size: 50px;
+    color: white;
+}
+.box-text-pink{
+    color: white;
+    @extend .number
+}
+.cust-white{
+    color: white;
+    font-size: 13px;
+}
+
+.box-icon i {
+    font-weight: revert-layer;
+}
+
+.box-icon1 {
+    color: v.$primary-color;
+    font-size: 35px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
